@@ -1,0 +1,13 @@
+class Solution {
+public:
+    int maxRepeating(string sequence, string word) {
+        int c = 0;
+        string tmp = word;
+        while(sequence.find(tmp) != string::npos)
+        {
+            c++;
+            tmp+=word;
+        }
+        return c;
+    }
+};
